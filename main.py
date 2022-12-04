@@ -107,11 +107,9 @@ def message_reply(message):
         bot.send_sticker(message.chat.id,"CAACAgIAAxkBAAEGrj9jjNWr6sgP5-edjkWOZnDoE9FwkwACPhYAAiR2OUhOF80tn_t59CsE")
         bot.send_message(message.chat.id,"Такой команды нет)")
            
-
 @bot.message_handler(content_types=['sticker'])
 def message_reply(message):
     bot.send_sticker(message.chat.id,"CAACAgIAAxkBAAEGqV5jiyw2iRSTw6bH788UxRAvS6u5uAACJxgAApd54UvWARYS3sXfTysE")
-
 
 try:
     bot.polling(none_stop=True)
